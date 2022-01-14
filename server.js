@@ -16,6 +16,9 @@ app.get('/', (req, res)=>{
 //greetings
 const greetingRoute = require('./routes/greetingsRoute')
 app.use('/greeting', greetingRoute)
+//tip calculator
+const tipRoute = require('./routes/tipRoute')
+app.use('/tip', tipRoute)
 
 
 app.listen(port, ()=>{
